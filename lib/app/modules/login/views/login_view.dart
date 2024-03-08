@@ -8,7 +8,7 @@ class LoginView extends GetView<LoginController> {
   LoginView({Key? key}) : super(key: key);
 
   final TextEditingController emailC =
-      TextEditingController(text: "admin@gmail.com");
+      TextEditingController(text: "admin123@gmail.com");
   final TextEditingController passC = TextEditingController(text: "admin123");
 
   final AuthController authC = Get.find<AuthController>();
