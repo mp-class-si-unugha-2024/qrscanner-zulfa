@@ -32,29 +32,27 @@ class HomeView extends GetView<HomeController> {
             case 0:
               title = "Add Product";
               icon = Icons.post_add_rounded;
-              onTap = () => Get.toNamed(Routes.addProduct); // Perbaikan disini
+              onTap = () => Get.toNamed(Routes.addProduct);
               break;
             case 1:
               title = "Products";
               icon = Icons.list_alt_outlined;
-              onTap = () => Get.toNamed(Routes
-                  .products); // Anda dapat menambahkan logic onTap jika diperlukan
+              onTap = () => Get.toNamed(Routes.products);
               break;
             case 2:
               title = "QR Code";
               icon = Icons.qr_code;
               onTap = () {
                 print("OPEN CAMERA");
-              }; // Anda dapat menambahkan logic onTap jika diperlukan
+              };
               break;
             case 3:
               title = "Catalog";
               icon = Icons.document_scanner_outlined;
               onTap = () {
                 print("OPEN PDF");
-              }; // Anda dapat menambahkan logic onTap jika diperlukan
+              };
               break;
-            // Atur default icon ke sini jika diperlukan
           }
 
           return Material(
@@ -69,11 +67,10 @@ class HomeView extends GetView<HomeController> {
                   SizedBox(
                     width: 50,
                     height: 50,
-                    child: Icon(icon,
-                        size: 50), // Menggunakan icon yang telah diinisialisasi
+                    child: Icon(icon, size: 50),
                   ),
                   const SizedBox(height: 10),
-                  Text(title), // Menggunakan title yang telah diinisialisasi
+                  Text(title),
                 ],
               ),
             ),
