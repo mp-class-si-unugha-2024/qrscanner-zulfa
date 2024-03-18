@@ -18,6 +18,9 @@ dependencies:
   pdf: ^3.10.8
   qr_flutter: ^4.1.0
 
+ 
+
+
 dev_dependencies:
   flutter_lints: ^2.0.0
   flutter_test:
